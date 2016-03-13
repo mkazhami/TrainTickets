@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 Calendar c = Calendar.getInstance();
-                c.add(Calendar.DATE, 22); // TODO: REMOVE
                 SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
                 String formattedDate = df.format(c.getTime()).replace("-", "/");
 
