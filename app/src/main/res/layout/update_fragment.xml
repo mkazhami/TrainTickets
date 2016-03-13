@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email\nRange"
+            android:id="@+id/updateEmailRangeText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textAlignment="center"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/updateEmailRangeLower"
+            android:layout_toRightOf="@+id/updateEmailRangeText"
+            android:layout_toEndOf="@+id/updateEmailRangeText"
+            android:layout_alignBottom="@+id/updateEmailRangeText"
+            android:hint="DD/MM/YYYY"
+            android:paddingTop="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/updateEmailRangeUpper"
+            android:hint="DD/MM/YYYY"
+            android:paddingTop="15dp"
+            android:paddingLeft="5dp"
+            android:layout_alignBottom="@+id/updateEmailRangeLower"
+            android:layout_toRightOf="@+id/updateEmailRangeLower"
+            android:layout_toEndOf="@+id/updateEmailRangeLower"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket\nRange"
+            android:id="@+id/updateTicketRangeText"
+            android:layout_below="@+id/updateEmailRangeText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="37dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/updateTicketRangeLower"
+            android:layout_alignTop="@+id/updateTicketRangeText"
+            android:layout_toRightOf="@+id/updateEmailRangeText"
+            android:layout_toEndOf="@+id/updateEmailRangeText"
+            android:hint="DD/MM/YYYY"
+            android:paddingTop="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/updateTicketRangeUpper"
+            android:hint="DD/MM/YYYY"
+            android:paddingTop="15dp"
+            android:paddingLeft="5dp"
+            android:layout_alignTop="@+id/updateTicketRangeLower"
+            android:layout_alignLeft="@+id/updateEmailRangeUpper"
+            android:layout_alignStart="@+id/updateEmailRangeUpper" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Database"
+            android:id="@+id/clearDBCheckBox"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/updateTicketRangeText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download All"
+            android:id="@+id/downloadAllCheck"
+            android:layout_alignTop="@+id/clearDBCheckBox"
+            android:layout_alignRight="@+id/updateTicketRangeUpper"
+            android:layout_alignEnd="@+id/updateTicketRangeUpper"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:id="@+id/textView2"
+            android:textAlignment="center"
+            android:layout_above="@+id/updateTicketRangeText"
+            android:layout_toStartOf="@+id/updateTicketRangeUpper"
+            android:layout_toLeftOf="@+id/updateTicketRangeUpper"
+            android:layout_toEndOf="@+id/updateEmailRangeLower"
+            android:layout_toRightOf="@+id/updateEmailRangeUpper"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:id="@+id/textView3"
+            android:layout_above="@+id/clearDBCheckBox"
+            android:layout_toLeftOf="@+id/updateTicketRangeLower"
+            android:layout_toRightOf="@+id/updateTicketRangeUpper"
+            android:layout_toEndOf="@+id/updateTicketRangeLower"
+            android:layout_toStartOf="@+id/updateTicketRangeUpper"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+</LinearLayout>
