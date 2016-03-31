@@ -50,7 +50,6 @@ public class Ticket {
         return "(" + date + ") " + origin + " - " + destination + "   " + time + "\nTrain #: " + trainNumber + "  Car: " + car + "  Seat: " + seat;
     }
 
-    // TODO: find a way to get a datetime string from dates like 'Fri. Apr 1, 2016 06:20'
     public String getDatetimeFormat() {
         Date date = null;
         try {
@@ -74,7 +73,7 @@ public class Ticket {
             e.printStackTrace();
         }
 
-        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         String dateStr = df.format(date);
         return dateStr;
     }

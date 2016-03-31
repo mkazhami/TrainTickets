@@ -113,10 +113,9 @@ public class MainActivity extends AppCompatActivity {
         mUpdateTodayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = new Bundle();
                 Calendar c = Calendar.getInstance();
-                SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-                String formattedDate = df.format(c.getTime()).replace("-", "/");
+                SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+                String formattedDate = df.format(c.getTime());  //.replace("-", "/");
 
                 lowerTicketRange = formattedDate;
                 upperTicketRange = formattedDate;

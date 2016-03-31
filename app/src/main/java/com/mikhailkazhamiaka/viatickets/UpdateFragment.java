@@ -137,9 +137,9 @@ public class UpdateFragment extends DialogFragment {
             if (s == null || s.equals("")) continue;
             String split[] = s.split("/");
             if (split.length != 3) return false;
-            int day = Integer.parseInt(split[0]);
+            int day = Integer.parseInt(split[2]);
             int month = Integer.parseInt(split[1]);
-            int year = Integer.parseInt(split[2]);
+            int year = Integer.parseInt(split[0]);
             if (day < 1 || day > 31) return false; // not as rigorous since it depends on month but whatever for now
             if (month < 1 || month > 12) return false;
             if (year < 1000 || year > 9999) return false; // not really needed

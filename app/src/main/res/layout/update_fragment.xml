@@ -30,7 +30,7 @@
             android:layout_toRightOf="@+id/updateEmailRangeText"
             android:layout_toEndOf="@+id/updateEmailRangeText"
             android:layout_alignBottom="@+id/updateEmailRangeText"
-            android:hint="DD/MM/YYYY"
+            android:hint="YYYY/MM/DD"
             android:paddingTop="15dp" />
 
         <EditText
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/updateEmailRangeUpper"
-            android:hint="DD/MM/YYYY"
+            android:hint="YYYY/MM/DD"
             android:paddingTop="15dp"
             android:paddingLeft="5dp"
             android:layout_alignBottom="@+id/updateEmailRangeLower"
@@ -68,7 +68,7 @@
             android:layout_alignTop="@+id/updateTicketRangeText"
             android:layout_toRightOf="@+id/updateEmailRangeText"
             android:layout_toEndOf="@+id/updateEmailRangeText"
-            android:hint="DD/MM/YYYY"
+            android:hint="YYYY/MM/DD"
             android:paddingTop="15dp" />
 
         <EditText
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/updateTicketRangeUpper"
-            android:hint="DD/MM/YYYY"
+            android:hint="YYYY/MM/DD"
             android:paddingTop="15dp"
             android:paddingLeft="5dp"
             android:layout_alignTop="@+id/updateTicketRangeLower"
